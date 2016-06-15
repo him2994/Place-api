@@ -1,0 +1,28 @@
+body {
+	background-color: #F4F0F0;
+	padding-top: 2%;
+}
+
+.float-right {
+	margin-left: 24rem !important;
+}
+
+.float-left {
+	margin-right: 26rem !important;
+}
+
+.card	{
+	margin-right: 3rem !important;
+	margin-left: 3rem !important;
+	position: relative;
+	display: inline-block;
+} 
+
+.image img {
+	height: 300px !important;
+}
+
+
+#map,#history {
+	display: none;
+}

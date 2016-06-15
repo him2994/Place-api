@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			Artist Task
+		</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+
+	<body>
+		<div class="ui container segment">
+			<div class="ui center aligned grid">
+				&nbsp
+				<div class="row">
+					<div class="eight wide column">
+						<button class="ui labeled icon button float-left refresh">
+						  <i class="refresh icon"></i>
+						  	Refresh
+						</button>
+					</div>
+					<div class="eight wide column" >
+						<button class="ui labeled icon button float-right history">
+						  <i class="time icon"></i>
+						  	History
+						</button>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row" id="refresh">
+					<div class="ui cards">
+						<div class="addCards"></div>
+					</div>
+				</div>
+				<div class="row" id="history">
+					<div class="ui cards">
+						<div class="addHCards"></div>
+					</div>
+				</div>
+
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<div id="map"></div>
+
+		<div class="ui modal">
+		  <i class="close icon"></i>
+		  <div class="header" id="name">
+		    Profile Picture
+		  </div>
+		  <div class="image content">
+		    <div class="ui medium image">
+		      <img src="" id="image">
+		    </div>
+		    <div class="description">
+		      <div class="ui header" id="main_description"></div>
+		      <p id="details"></p>
+		      <p id="mini_details"></p>
+		  		<div class="ui heart rating" data-rating="4" data-max-rating="5"></div>
+			  <!-- <div class="ui feed">
+		  		<br><p><b>Reviews : </b></p>
+			  	<div class="addFeeds"></div>
+			  </div> -->
+		    </div>
+		  </div>
+		  <div class="actions">
+		    <div class="ui black deny button">
+		      Cancel
+		    </div>
+		    <div class="ui positive right labeled icon button">
+		      Ok
+		      <i class="checkmark icon"></i>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- <script src="http://www.google.com/jsapi"></script> -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIOBqiDX7Ef9XBAKNJscUS0hbr00W0z3Y&libraries=places"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+		<script src="../js/main.js"></script>
+	</body>
+
+</html>
